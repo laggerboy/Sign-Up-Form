@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(228, 228, 228);
+}
+
+body {
+  background-image: url(images/lego-heads.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: url(Fonts/lego-full/LEGO.ttf), sans-serif;
+  color: rgb(177, 177, 177);
+  text-align: center;
+  margin-top: 1.5em;
+  font-size: 50px;
+  font-weight: 930;
+}
+
+.container {
+  border: 2px dashed rgb(75, 70, 70);
+  background-color: rgba(54, 54, 54, 0.65);
+  width: clamp(600px, 900px, 1100px);
+  height: 1200px;
+  margin: 5em auto;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
