@@ -1,7 +1,12 @@
+:root {
+  --grey: rgba(54, 54, 54, 0.65);
+  --yellow: rgb(170, 144, 71);
+}
+
 * {
   margin: 0;
   padding: 0;
-  color: rgb(228, 228, 228);
+  color: var(--yellow);
 }
 
 body {
@@ -11,7 +16,7 @@ body {
 
 h1 {
   font-family: url(Fonts/lego-full/LEGO.ttf), sans-serif;
-  color: rgb(177, 177, 177);
+  color: var(--yellow);
   text-align: center;
   margin-top: 1.5em;
   font-size: 50px;
@@ -19,13 +24,81 @@ h1 {
 }
 
 .container {
-  border: 2px dashed rgb(75, 70, 70);
-  background-color: rgba(54, 54, 54, 0.65);
+  /* border: 2px dashed rgb(75, 70, 70); */
+  background-color: var(--grey);
+  box-shadow: 0 0 35px rgb(54, 54, 54);
+  font-size: large;
+  font-weight: 900;
+  border-radius: 35px;
   width: clamp(600px, 900px, 1100px);
-  height: 1200px;
+  height: 33em;
   margin: 5em auto;
   padding: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.briefing {
+  align-self: baseline;
+  margin-left: 8.7em;
+}
+
+form {
+  /* background-color: rgba(54, 54, 54, 0.5); */
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label,
+input {
+  margin: 0.7em;
+  display: block;
+  width: 100%;
+}
+
+input {
+  height: 2.5em;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset -2px -2px 5px rgba(54, 54, 54, 0.65);
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6em;
+}
+
+.form-item {
+  /* border: 1px solid white; */
+  width: 30%;
+  max-width: 50%;
+}
+
+.button-container {
+  margin-top: 2rem;
+  align-self: baseline;
+  margin-left: 8.8rem;
+}
+
+button {
+  padding: none;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  width: 9rem;
+  height: 2rem;
+  color: whitesmoke;
+  background-color: var(--yellow);
+}
+
+p {
+  margin: 0.9rem 0;
 }

@@ -3,38 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up Form</title>
+    <title>Lego Minds Invitation</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Welcome to the Lego Minds Commuinty</h1>
     <div class="container">
-      <h2>Join us today!</h2>
+      <div class="briefing">
+        <h2>Join us today!</h2>
+        <p>One place for all lego minded individuals</p>
+      </div>
       <form action="#" method="get">
         <fieldset>
-          <legend>please fill this form</legend>
+          <div class="form-item">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" />
+          </div>
 
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" />
-
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" />
-
-          <label for="email-address">EMAIL</label>
-          <input type="email" id="email-address" />
-
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="number" id="phone-number" />
-
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" />
-
-          <label for="confirm-password">CONDIRM PASSWORD</label>
-          <input type="password" id="confirm-password" />
+          <div class="form-item">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" />
+          </div>
         </fieldset>
-        <button type="submit">Create Account</button>
+
+        <fieldset>
+          <div class="form-item">
+            <label for="email-address">EMAIL</label>
+            <input type="email" id="email-address" />
+          </div>
+          <div class="form-item">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="number" id="phone-number" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="form-item">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="form-item">
+            <label for="confirm-password">CONDIRM PASSWORD</label>
+            <input type="password" id="confirm-password" />
+          </div>
+        </fieldset>
+
+        <div class="button-container">
+          <button type="submit">Join Us</button>
+          <p>Already a memeber? <a href="#"> Log in</a></p>
+        </div>
       </form>
-      <p>Already joined? <a href="#"> Log in</a></p>
     </div>
   </body>
+  <footer>
+    the Lego Minds Community is fictional concept created for the sake of this
+    project.
+  </footer>
 </html>
