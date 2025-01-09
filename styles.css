@@ -1,12 +1,12 @@
 :root {
   --grey: rgba(54, 54, 54, 0.65);
-  --yellow: rgb(170, 144, 71);
+  --lego-yellow: rgb(170, 144, 71);
 }
 
 * {
   margin: 0;
   padding: 0;
-  color: var(--yellow);
+  color: var(--lego-yellow);
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-family: url(Fonts/lego-full/LEGO.ttf), sans-serif;
-  color: var(--yellow);
+  color: var(--lego-yellow);
   text-align: center;
   margin-top: 1.5em;
   font-size: 50px;
@@ -61,11 +61,18 @@ input {
 }
 
 input {
-  height: 2.5em;
+  color: black;
+  padding: 0px 4px;
+  font-size: large;
+  height: 2em;
   width: 100%;
-  border: none;
+  border: 1px solid var(--lego-yellow);
   border-radius: 4px;
   box-shadow: inset -2px -2px 5px rgba(54, 54, 54, 0.65);
+}
+
+input:invalid {
+  border: 2px solid rgba(194, 56, 56, 0.829);
 }
 
 fieldset {
@@ -90,15 +97,40 @@ fieldset {
 
 button {
   padding: none;
+  margin-bottom: 1em;
   font-size: large;
   border: none;
   border-radius: 5px;
   width: 9rem;
   height: 2rem;
   color: whitesmoke;
-  background-color: var(--yellow);
+  background-color: var(--lego-yellow);
 }
 
 p {
   margin: 0.9rem 0;
+}
+
+footer {
+  background-color: var(--lego-yellow);
+
+  padding: 1rem;
+}
+
+footer,
+p {
+  padding: none;
+  margin: 0px;
+  color: whitesmoke;
+  font-size: large;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
